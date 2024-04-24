@@ -97,6 +97,7 @@ class PDFXrefAndTrailer(ContentWithoutID):
             if file_id:
                 out.append(f"/ID [{file_id}]")
         out.append(">>")
+        
         out.append("startxref")
         startxref = self.startxref
         if self.is_main_xref:
